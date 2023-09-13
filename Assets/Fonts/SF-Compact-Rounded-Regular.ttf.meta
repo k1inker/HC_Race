@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: bdd12bae0aab85f419fb008b50c6a3e1
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - SF Compact Rounded
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: d79962d804465a644b278150665ade83, type: 3}
+  - {fileID: 12800000, guid: dad6065c0a2131246a6ee0a0c517f42e, type: 3}
+  - {fileID: 12800000, guid: b19a4fa989fff4847ad2da12ad683e2d, type: 3}
+  - {fileID: 12800000, guid: 4bf8d2da97ace18438ff89ea9905e018, type: 3}
+  - {fileID: 12800000, guid: 51f9999bf9cda4a4aa3b3a77b770e4e0, type: 3}
+  - {fileID: 12800000, guid: 30ebbce1b07d44e4e93b48e1f3947499, type: 3}
+  - {fileID: 12800000, guid: 933830157b364fb4586c51213e22f71e, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
