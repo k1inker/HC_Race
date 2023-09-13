@@ -1,12 +1,14 @@
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerLocomotion : MonoBehaviour
 {
-    [SerializeField] private float speed;
+    [SerializeField] private float _speedMultiplier = 1f;
 
-    private bool isMoving;
-    private int horizontal = 0;
-    private int vertical = 0;
+    [SerializeField] private float _speed;
+    
+    private bool _isMoving;
+    private int _horizontal = 0;
+    private int _vertical = 0;
 
     private BoxCollider2D _collider;
     private void Awake()
@@ -25,31 +27,31 @@ public class PlayerMovement : MonoBehaviour
     }
     private void SetHorizontalMove(int direction)
     {
-        horizontal = direction;
+        _horizontal = direction;
         if (direction == 0)
         {
-            isMoving = false;
+            _isMoving = false;
             return;
         }
-        isMoving = true;
+        _isMoving = true;
     }
     private void SetVerticalMove(int direction)
     {
-        vertical += direction;
+        _vertical += direction;
         if (direction == 0)
         {
-            isMoving = false;
-            vertical = 0;
+            _isMoving = false;
+            _vertical = 0;
             return;
         }
-        isMoving = true;
+        _isMoving = true;
     }
     private void FixedUpdate()
     {
-        if (!isMoving)
+        if (!_isMoving)
             return;
 
-        Vector2 newPosition = transform.position + new Vector3(horizontal * speed, vertical * speed);
+        Vector2 newPosition = transform.position + new Vector3(_horizontal * _speed * _speedMultiplier, _vertical * _speed * _speedMultiplier);
         transform.position = CheckForBorders(Vector2.Lerp(transform.position, newPosition, Time.deltaTime));
     }
     private Vector2 CheckForBorders(Vector2 targetPosition)
@@ -61,5 +63,9 @@ public class PlayerMovement : MonoBehaviour
             targetPosition.y = transform.position.y;
 
         return targetPosition;
+    }
+    public void SetMultiplierSpeed(float multiplier)
+    {
+        _speedMultiplier = multiplier;
     }
 }
