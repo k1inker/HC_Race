@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 4149281757210556144}
   - component: {fileID: 3752749795441606623}
   - component: {fileID: 5257478299284090991}
+  - component: {fileID: 4946449457636320458}
+  - component: {fileID: 4586564458132704229}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Untagged
@@ -97,3 +99,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3766963fcca168f4eb6e10ca72968f9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &4946449457636320458
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6776285059892640791}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.3102878, y: 1.4699999}
+    newSize: {x: 1.3102878, y: 1.4699999}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.3102878, y: 1.4699999}
+  m_EdgeRadius: 0
+--- !u!114 &4586564458132704229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6776285059892640791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09172f6bc1c87ec44880f9cec3860401, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountScore: 10000

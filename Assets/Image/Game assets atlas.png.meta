@@ -225,9 +225,9 @@ TextureImporter:
       name: Game assets atlas_8
       rect:
         serializedVersion: 2
-        x: 3143
+        x: 3142
         y: 1881
-        width: 740
+        width: 741
         height: 65
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -583,8 +583,8 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4234
-        y: 684
-        width: 777
+        y: 685
+        width: 780
         height: 160
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -595,6 +595,27 @@ TextureImporter:
       bones: []
       spriteID: dca5cf237ab4a494ab97a0e1d20e4fb5
       internalID: 2087298801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game assets atlas_1
+      rect:
+        serializedVersion: 2
+        x: 4254
+        y: 513
+        width: 558
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a90bcfefaa9872046a3721ba88e6a1d0
+      internalID: -497754931
       vertices: []
       indices: 
       edges: []
@@ -612,32 +633,32 @@ TextureImporter:
     nameFileIdTable:
       Game assets atlas_0: 2087298801
       Game assets atlas_1: -497754931
-      Game assets atlas_10: 2043729000
-      Game assets atlas_11: -2145169637
-      Game assets atlas_12: 197918967
-      Game assets atlas_13: -1128307151
-      Game assets atlas_14: 1633587968
-      Game assets atlas_15: -190601221
-      Game assets atlas_16: -320008267
-      Game assets atlas_17: 1544762425
-      Game assets atlas_18: 444603435
-      Game assets atlas_19: -1518748199
-      Game assets atlas_2: -241757636
-      Game assets atlas_20: 1547432377
-      Game assets atlas_21: -1648783437
-      Game assets atlas_22: -675231148
-      Game assets atlas_23: 1447114537
-      Game assets atlas_24: 939151825
-      Game assets atlas_25: 1948179752
-      Game assets atlas_26: 372579029
-      Game assets atlas_27: 1789142442
-      Game assets atlas_3: -1696228316
-      Game assets atlas_4: -1616486826
-      Game assets atlas_5: 1310247048
-      Game assets atlas_6: 1633029048
-      Game assets atlas_7: -203882475
-      Game assets atlas_8: -1046720915
-      Game assets atlas_9: -468012595
+      Game assets atlas_10: -241757636
+      Game assets atlas_11: -1696228316
+      Game assets atlas_12: -1616486826
+      Game assets atlas_13: 1310247048
+      Game assets atlas_14: 1633029048
+      Game assets atlas_15: -203882475
+      Game assets atlas_16: -1046720915
+      Game assets atlas_17: -468012595
+      Game assets atlas_18: 2043729000
+      Game assets atlas_19: -2145169637
+      Game assets atlas_2: 197918967
+      Game assets atlas_20: -1128307151
+      Game assets atlas_21: 1633587968
+      Game assets atlas_22: -190601221
+      Game assets atlas_23: -320008267
+      Game assets atlas_24: 1544762425
+      Game assets atlas_25: 444603435
+      Game assets atlas_26: -1518748199
+      Game assets atlas_27: 1547432377
+      Game assets atlas_3: -1648783437
+      Game assets atlas_4: -675231148
+      Game assets atlas_5: 1447114537
+      Game assets atlas_6: 939151825
+      Game assets atlas_7: 1948179752
+      Game assets atlas_8: 372579029
+      Game assets atlas_9: 1789142442
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

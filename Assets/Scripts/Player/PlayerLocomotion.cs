@@ -2,18 +2,16 @@ using UnityEngine;
 
 public class PlayerLocomotion : MonoBehaviour
 {
-    [SerializeField] private float _speedMultiplier = 1f;
+    private PlayerStats _stats;
+    private BoxCollider2D _collider;
 
-    [SerializeField] private float _speed;
-    
     private bool _isMoving;
     private int _horizontal = 0;
     private int _vertical = 0;
-
-    private BoxCollider2D _collider;
     private void Awake()
     {
         _collider = GetComponent<BoxCollider2D>();
+        _stats = GetComponent<PlayerStats>();
     }
     private void OnEnable()
     {
@@ -46,14 +44,6 @@ public class PlayerLocomotion : MonoBehaviour
         }
         _isMoving = true;
     }
-    private void FixedUpdate()
-    {
-        if (!_isMoving)
-            return;
-
-        Vector2 newPosition = transform.position + new Vector3(_horizontal * _speed * _speedMultiplier, _vertical * _speed * _speedMultiplier);
-        transform.position = CheckForBorders(Vector2.Lerp(transform.position, newPosition, Time.deltaTime));
-    }
     private Vector2 CheckForBorders(Vector2 targetPosition)
     {
         if (Mathf.Abs(targetPosition.x) >= RoadManager.Instance.WidthBorder - (_collider.size.x / 2))
@@ -64,8 +54,12 @@ public class PlayerLocomotion : MonoBehaviour
 
         return targetPosition;
     }
-    public void SetMultiplierSpeed(float multiplier)
+    private void FixedUpdate()
     {
-        _speedMultiplier = multiplier;
+        if (!_isMoving)
+            return;
+
+        Vector2 newPosition = transform.position + new Vector3(_horizontal * _stats.Speed, _vertical * _stats.Speed);
+        transform.position = CheckForBorders(Vector2.Lerp(transform.position, newPosition, Time.deltaTime));
     }
 }

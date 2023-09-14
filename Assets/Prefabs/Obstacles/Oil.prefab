@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 134173681124599877}
   - component: {fileID: 2808075681680906426}
   - component: {fileID: -5154921905801644155}
+  - component: {fileID: -4270707761219624429}
+  - component: {fileID: 156971782116170146}
   m_Layer: 0
   m_Name: Oil
   m_TagString: Untagged
@@ -97,3 +99,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3766963fcca168f4eb6e10ca72968f9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-4270707761219624429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843885677889902271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ed6c66c61de19d49bb388e7ed9e280f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _booster: {fileID: 11400000, guid: 0e3705ebf70b5464cbbdcac6448f8fcf, type: 2}
+--- !u!61 &156971782116170146
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843885677889902271}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.9008572, y: 4.02}
+    newSize: {x: 3.9008572, y: 4.02}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.9008572, y: 4.02}
+  m_EdgeRadius: 0

@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 6253999996571753557}
   - component: {fileID: 1113156408343444248}
   - component: {fileID: 5259590247591331209}
+  - component: {fileID: 4664113133198210533}
+  - component: {fileID: 3514583425611587946}
+  - component: {fileID: -8322330166551910778}
   m_Layer: 0
   m_Name: Cracks2
   m_TagString: Untagged
@@ -97,3 +100,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3766963fcca168f4eb6e10ca72968f9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &4664113133198210533
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8524394025355410955}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.0311055, y: 5.0299997}
+    newSize: {x: 5.0311055, y: 5.0299997}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5, y: 5.0299997}
+  m_EdgeRadius: 0
+--- !u!114 &3514583425611587946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8524394025355410955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4509b8746447e7a4f9e5ad48ec2e8411, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damage: 25
+  _isDeadly: 0
+--- !u!114 &-8322330166551910778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8524394025355410955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ed6c66c61de19d49bb388e7ed9e280f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _booster: {fileID: 11400000, guid: a405d1e44d330924ebf176cc0b467a56, type: 2}
