@@ -5,12 +5,12 @@ public class PlayerLocomotion : MonoBehaviour
     private PlayerStats _stats;
     private BoxCollider2D _collider;
 
-    private bool _isMoving;
+    private bool _isMoving = false;
     private int _horizontal = 0;
     private int _vertical = 0;
     private void Awake()
     {
-        _collider = GetComponent<BoxCollider2D>();
+        _collider = GetComponentInChildren<BoxCollider2D>();
         _stats = GetComponent<PlayerStats>();
     }
     private void OnEnable()

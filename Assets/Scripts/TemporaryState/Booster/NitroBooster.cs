@@ -7,17 +7,11 @@ public class NitroBooster : TemporaryBooster
     public override void StartAction()
     {
         PlayerStats.Instance.AddSpeedMultiplier(_multiplier);
-        ManagerUI.Instance.SetupBooster(this);
+        base.StartAction();
     }
     public override void StopAction()
     {
         PlayerStats.Instance.AddSpeedMultiplier(-_multiplier);
-        ManagerUI.Instance.DisableBooster();
-    }
-
-    public override void UpdateAction(ref float time)
-    {
-        time -= Time.fixedDeltaTime;
-        ManagerUI.Instance.SetBooster(time);
+        base.StopAction();
     }
 }

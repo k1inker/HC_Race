@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class StateManager : MonoBehaviour
 {
+    [SerializeField] private GameObject _damageEffect;
     private class TimeState
     {
         public TemporaryState state;
@@ -32,6 +33,7 @@ public class StateManager : MonoBehaviour
                 return;
             }
             obstacle.DealDamage();
+            Instantiate(_damageEffect, collision.ClosestPoint(collision.transform.position), Quaternion.identity);
         }   
     }
     public void TakeState(TemporaryState state)

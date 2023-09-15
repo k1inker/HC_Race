@@ -16,4 +16,6 @@ MonoBehaviour:
   nameBooster: Nitro
   imgSlider: {fileID: -320008267, guid: a316783071261304a80284ec2c63a658, type: 3}
   backgroundSlider: {fileID: 2087298801, guid: a316783071261304a80284ec2c63a658, type: 3}
+  skinPlayer: {fileID: -1430555720, guid: 6c51c5f12f657f84bb2d9d6cf7b56829, type: 3}
+  skinEffect: {fileID: 1964935207, guid: 6c51c5f12f657f84bb2d9d6cf7b56829, type: 3}
   _multiplier: 0.4

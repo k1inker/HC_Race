@@ -16,3 +16,5 @@ MonoBehaviour:
   nameBooster: Shield
   imgSlider: {fileID: 1633587968, guid: a316783071261304a80284ec2c63a658, type: 3}
   backgroundSlider: {fileID: -1046720915, guid: a316783071261304a80284ec2c63a658, type: 3}
+  skinPlayer: {fileID: -620161447, guid: 6c51c5f12f657f84bb2d9d6cf7b56829, type: 3}
+  skinEffect: {fileID: -169092463, guid: 6c51c5f12f657f84bb2d9d6cf7b56829, type: 3}

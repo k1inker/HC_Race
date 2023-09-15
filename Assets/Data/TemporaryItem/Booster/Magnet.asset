@@ -16,5 +16,7 @@ MonoBehaviour:
   nameBooster: Magnet
   imgSlider: {fileID: -2145169637, guid: a316783071261304a80284ec2c63a658, type: 3}
   backgroundSlider: {fileID: -1046720915, guid: a316783071261304a80284ec2c63a658, type: 3}
+  skinPlayer: {fileID: -2114476504, guid: 6c51c5f12f657f84bb2d9d6cf7b56829, type: 3}
+  skinEffect: {fileID: 1399692679, guid: 6c51c5f12f657f84bb2d9d6cf7b56829, type: 3}
   _radius: 6
-  _magnet: {fileID: 22659830166333617, guid: 2243cb4565e2d6749859012ae622379c, type: 3}
+  _magnet: {fileID: -9074378103940299336, guid: 2243cb4565e2d6749859012ae622379c, type: 3}

@@ -4,22 +4,18 @@ using UnityEngine;
 public class MagnetBooster : TemporaryBooster
 {
     [SerializeField] private float _radius;
-    [SerializeField] private GameObject _magnet;
+    [SerializeField] private MagnetTrigger _magnet;
+
+    private GameObject _refObject;
     public override void StartAction()
     {
-        Instantiate(_magnet, PlayerStats.Instance.transform);
-        _magnet.GetComponent<CircleCollider2D>().radius = _radius;
-        ManagerUI.Instance.SetupBooster(this);
+        _refObject = Instantiate(_magnet.gameObject, PlayerStats.Instance.gameObject.transform);
+        _magnet.SetRadius(_radius);
+        base.StartAction();
     }
     public override void StopAction()
     {
-        ManagerUI.Instance.DisableBooster();
-        Destroy(_magnet);
-    }
-
-    public override void UpdateAction(ref float time)
-    {
-        time -= Time.fixedDeltaTime;
-        ManagerUI.Instance.SetBooster(time);
+        Destroy(_refObject);
+        base.StopAction();
     }
 }

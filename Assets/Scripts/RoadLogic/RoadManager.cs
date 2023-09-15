@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class RoadManager : Singelton<RoadManager>
@@ -9,13 +10,16 @@ public class RoadManager : Singelton<RoadManager>
     [SerializeField] private float _heightBorder;
 
     [SerializeField] private GameObject moveableRoad;
-
+    private bool _isMoving = false;
     public float WidthBorder { get { return _widthBorder / 2; } }
     public float HeightBorder { get { return _heightBorder / 2; } }
     public float LineDestroy { get { return _lineDestroy; } }
     public GameObject MoveableRoad { get { return moveableRoad; } }
     private void FixedUpdate()
     {
+        if (!_isMoving)
+            return;
+
         Vector3 newPosition = new Vector3(0, moveableRoad.transform.position.y - _speedRoad, 0);
         moveableRoad.transform.position = Vector3.Lerp(moveableRoad.transform.position, newPosition, Time.deltaTime);
     }
@@ -30,13 +34,19 @@ public class RoadManager : Singelton<RoadManager>
     private void OnEnable()
     {
         PlayerStats.Instance.OnDeath += StopRoad;
+        ManagerUI.Instance.OnStartRace += StartRoad;
     }
     private void OnDisable()
     {
         PlayerStats.Instance.OnDeath -= StopRoad;
+        ManagerUI.Instance.OnStartRace -= StartRoad;
+    }
+    private void StartRoad()
+    {
+        _isMoving = true;
     }
     private void StopRoad()
     {
-        _speedRoad = 0;
+        _isMoving = false;
     }
 }
