@@ -24,14 +24,11 @@ public class ManagerUI : Singelton<ManagerUI>
     [Header("References Health")]
     [SerializeField] private Slider _healthSlider;
     [SerializeField] private float _damageDisplayTime;
-    [SerializeField] private Sprite _damageBackgroundSlider;
-    [SerializeField] private Image _healthBackgroundSlider;
     [SerializeField] private GameObject _damageBackground;
 
     [Header("References Booster Slider")]
     [SerializeField] private Slider _boosterSlider;
     [SerializeField] private Image _imageSlider;
-    [SerializeField] private Image _backgroundSlider;
     [SerializeField] private TextMeshProUGUI _textBooster;
     private void OnEnable()
     {
@@ -80,7 +77,6 @@ public class ManagerUI : Singelton<ManagerUI>
         SetBooster(booster.duration);
 
         _imageSlider.sprite = booster.imgSlider;
-        //_backgroundSlider.sprite = booster.backgroundSlider;
 
         _textBooster.text = booster.nameBooster;
 
@@ -120,17 +116,9 @@ public class ManagerUI : Singelton<ManagerUI>
     }
     private IEnumerator DisplayDamage()
     {
-        //Sprite bufferSprite = _healthBackgroundSlider.sprite;
-        //Color bufferColor = _healthBackgroundSlider.color;
-
-        //_healthBackgroundSlider.sprite = _damageBackgroundSlider;
-        //_healthBackgroundSlider.color = Color.red;
         _damageBackground.SetActive(true);
 
         yield return new WaitForSeconds(_damageDisplayTime);
-
-        //_healthBackgroundSlider.sprite = bufferSprite;
-        //_healthBackgroundSlider.color = bufferColor;
 
         _damageBackground.SetActive(false);
     }
